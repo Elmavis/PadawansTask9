@@ -11,6 +11,8 @@ namespace PadawansTask9
             List<Point> l = new List<Point>();
             if (range <= 0)
                 throw new ArgumentException();
+            if (points == null)
+                throw new ArgumentNullException();
             if (points.Length == 0)
                 throw new ArgumentException();
             foreach (Point p in points)
